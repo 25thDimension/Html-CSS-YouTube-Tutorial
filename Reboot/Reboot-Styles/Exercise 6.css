@@ -17,3 +17,12 @@
       .model3 {
         text-decoration: underline;
       }
+
+      .model4 {
+        width: 250px;
+        object-fit: cover;
+        object-position: right;
+        border-width: 3px;
+        border-style: solid;
+        border-color: red;
+      }
