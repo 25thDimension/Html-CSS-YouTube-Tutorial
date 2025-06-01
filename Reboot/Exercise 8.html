@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise 8 Display Block and Inline-Block
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Roboto;
+        height: 1000px;
+      }
+
+      div {
+        margin-top: 40px;
+      }
+
+      .log1 {
+        font-size: 14px;
+        width: 150px;
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 2px;
+      }
+
+      .log2 {
+        font-size: 14px;
+        width: 150px;
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        margin-top: 4px;
+      }
+
+      .sup1 {
+        width: 250px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .sup2 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .sup3 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .goo {
+        text-align: center;
+      }
+
+      .goo1 {
+        width: 300px;
+        display: block;
+        margin-left: 500px;
+        margin-bottom: 10px;
+      }
+
+      .goo2 {
+        width: 600px;
+        font-size: 16px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        display: block;
+        margin-left: 25%;
+      }
+
+      .goo3, .goo4 {
+        font-size: 16px;
+        background-color: rgb(233, 232, 232);
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .goo3:hover, .goo4:hover {
+        background-color: rgb(213, 213, 213);
+      }
+
+      .goo3:active, .goo4:active {
+        opacity: 0.75;
+      }
+
+      .for1, .for2 {
+        width: 137px;
+        font-size: 14px;
+        border-style: solid;
+        border-color: grey;
+        border-width: 1px;
+        border-radius: 5px;
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .for3 {
+        width: 300px;
+        font-size: 14px;
+        border-style: solid;
+        border-color: grey;
+        border-width: 1px;
+        border-radius: 7px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        display: block;
+      }
+
+      .for4 {
+        background-color: rgb(0, 119, 255);
+        color: White;
+        border: none;
+        border-radius: 5px;
+        width: 321px;
+        height: 36px;
+        font-weight: bold;
+        display: block;
+        margin-top: 6px;
+        transition: background-color 0.3s, opacity 0.15s;
+      }
+
+      .for4:hover {
+        background-color: rgb(0, 107, 230);
+      }
+
+      .for4:active {
+        opacity: 0.75;
+      }
+
+      .for5 {
+        background-color: white;
+        color: rgb(0, 119, 255);
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(0, 119, 255);
+        border-radius: 5px;
+        width: 321px;
+        height: 36px;
+        font-weight: bold;
+        display: block;
+        margin-top: 6px;
+        transition: background-color 0.3s, border-color 0.3s, opacity 0.15s;
+      }
+
+      .for5:hover {
+        background-color: rgb(240, 240, 240);
+        border-color: rgb(180, 180, 180);
+      }
+
+      .for5:active {
+        opacity: 0.75;
+      }      
+
+      .ubr1 {
+        font-size: 28px;
+        font-weight: 450;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .ubr2, .ubr3 {
+        background-color: rgb(240, 240, 240);
+        color: rgb(87, 87, 87);
+        font-size: 14px;
+        height: 30px;
+        width: 300px;
+        display: block;
+        margin-top: 5px;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+      .ubr4 {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size: 14px;
+        border: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: inline-block;
+        transition: background-color 0.3s, opacity 0.15s;
+      }
+
+      .ubr4:hover {
+        background-color: rgb(43, 42, 42);
+      }
+
+      .ubr4:active {
+        opacity: 0.75;
+      }
+
+      .ubr5 {
+        background-color: rgb(235, 235, 235);
+        border: none;
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 15px;
+        display: inline-block;
+        transition: background-color 0.3s, opacity 0.15s;
+      }
+
+       .ubr5:hover {
+        background-color: rgb(215, 215, 215);
+      }
+
+      .ubr5:active {
+        opacity: 0.75;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="log">
+      <input class="log1" type="text" placeholder="Name">
+      <input class="log2" type="text" placeholder="Email">
+    </div>
+
+    <div class="sup">
+      <p class="sup1">
+        Thanks for chatting with our customer support.
+        Would you like to take our quick survey?
+      </p>
+
+      <button class="sup2"> 
+        Yes 
+      </button>
+
+      <button class="sup3"> 
+        No
+      </button>
+    </div>
+
+    <div class="goo">
+    <img class="goo1" src="Reboot-img\Google.png">
+
+    <input class="goo2" type="text" placeholder="Search Google or type a URL">
+
+    <button class="goo3">
+      Search Google
+    </button>
+
+    <button class="goo4">
+      I'm Feeling Lucky
+    </button>
+
+    </div>
+
+    <div class="for">
+      <input class="for1" type="text" placeholder="First name">
+      <input class="for2" type="text" placeholder="Last name">
+      <input class="for3" type="text" placeholder="Email">
+
+      <button class="for4">
+        Sign up 
+      </button>
+
+      <button class="for5">
+        Log in
+      </button>
+    </div>
+
+    <div class="ubr">
+      <p class="ubr1">
+        Request a ride now
+      </p>
+
+      <input class="ubr2" type="text" placeholder="Enter pickup location">
+      <input class="ubr3" type="text" placeholder="Enter destination">
+
+      <button class="ubr4">
+        Request now
+      </button>
+
+      <button class="ubr5">
+        Schedule for later
+      </button>
+    </div>
+  </body>
+</html>
